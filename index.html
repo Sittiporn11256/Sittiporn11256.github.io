@@ -36,9 +36,9 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top">
         <div class="container">
-            <a href="#" class="navbar-brand fw-bolder fs-3"><i class="bi bi-unity fs-1 text-primary"></i>MOS STORE</a>
+            <a href="#" class="navbar-brand fw-bolder fs-3"><i class="bi bi-unity fs-1 text-primary"></i>MoSKiTo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,38 +59,116 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <span><a href="#"><i class="bi bi-cart-fill text-dark btn btn-outline-secondary"></i></a></span>
+            <div class="d-flex align-items-center">
+                <span><input type="text" placeholder="Enter you interest" class="d-none d-md-block border rounded"></span>
+                <span><a href="#"><i class="bi bi-search text-dark btn btn-sm btn-outline-secondary d-none d-md-block ms-1"></i></a></span>
+                <span><a href="#"><i class="bi bi-cart-fill text-dark btn btn-outline-secondary ms-2"></i></a></span>
                 <span><a href="#"><i class="bi bi-person-fill text-dark btn btn-outline-secondary ms-2"></i></a></span>
             </div>
         </div>
     </nav>
 
     <!-- Carousel -->
-    <div class="container-fluid">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://img.freepik.com/free-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?t=st=1709573037~exp=1709576637~hmac=acab60e60342e80596857d86fd112d9244f4bbe42ebcb935bfec1137739709c5&w=826"
-                        class="d-block w-100 h-50" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://img.freepik.com/free-photo/mobile-phone-screen-digital-device_53876-97294.jpg?t=st=1709573324~exp=1709576924~hmac=54e952f14439e28f5e627f148da9e53b9fef3a7311bd5847d51fc92d86ddd188&w=1380"
-                        class="d-block w-100 h-50" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://img.freepik.com/free-photo/portrait-young-stylish-laughing-model-black-casual-summer-clothes-cap-with-natural-makeup-white_158538-11834.jpg?w=740&t=st=1709572657~exp=1709573257~hmac=7d1ec3c5549408788573af0f40d45e6369950c529b076bcdec7eec129b0c3e87"
-                        class="d-block w-100 h-50" alt="...">
+    <div class="container bg-body-tertiary">
+        <div class="row">
+            <div class="col-sm-10 m-auto">
+                <!-- การสร้าง Carousel -->
+                <div class="carousel slide" id="slider1" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <button data-bs-target="#slider1" data-bs-slide-to="0"></button>
+                        <button data-bs-target="#slider1" data-bs-slide-to="1"></button>
+                        <button class="active" data-bs-target="#slider1" data-bs-slide-to="2"></button>
+                        <button data-bs-target="#slider1" data-bs-slide-to="3"></button>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="https://www.kito.co.th/wp-content/uploads/2020/09/Kito-Move-TWOTONE-A-scaled.jpg"
+                                class="d-block w-100">                           
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.kito.co.th/wp-content/uploads/2020/03/AA54-TAN-scaled.jpg"
+                                class="d-block w-100">                           
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="https://www.kito.co.th/wp-content/uploads/2020/12/Kito-BL2-Black.jpg"
+                                class="d-block w-100">                           
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.kito.co.th/wp-content/uploads/2019/07/Kito-BE7-RED-A-2.jpg"
+                                class="d-block w-100">                    
+                        </div>
+                    </div>
+                    <!-- ควบคุมการ Slide ผ่านปุ่ม -->
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider1">
+                        <span class="carousel-control-prev-icon btn btn-lg btn-primary"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider1">
+                        <span class="carousel-control-next-icon btn btn-lg btn-primary"></span>
+                    </button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="container bg-body-tertiary my-3">
+        <div class="col-sm-12">
+            <h3>Sell For You!</h3>
+        </div>
+        <div class="col-sm-12 d-flex">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/jpeg;base64,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"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">KITO BE7</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <h6 class="card-text">1200 ฿</h6>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.kito.co.th/wp-content/uploads/2019/09/Kito-AH61-White.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">KITO Move</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <h6 class="card-text">990 ฿</h6>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG5bTbxT4dX57uG-cxZBHZRuJmUOtCjPYtaQ&usqp=CAU"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">KITO BL2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <h6 class="card-text">870 ฿</h6>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.kito.co.th/wp-content/uploads/2023/05/Kito-BE20-Red-A-1.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">KITO BE20</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <h6 class="card-text">1400 ฿</h6>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
